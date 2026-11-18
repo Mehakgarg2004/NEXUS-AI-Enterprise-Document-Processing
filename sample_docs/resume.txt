@@ -1,0 +1,19 @@
+Rohan Gupta
+rohan.gupta@example.com | +91 9952304698 | linkedin.com/in/rohangupta
+
+OBJECTIVE
+Motivated professional seeking a challenging role to apply my skills.
+
+EXPERIENCE
+Data Analyst — Sharma Traders (9 years)
+- Built and maintained production systems; improved performance by 30%.
+
+EDUCATION
+B.Tech in Computer Science, IIT Delhi
+
+SKILLS: Python, TensorFlow, Git, NLP, PostgreSQL, Flask, Tableau
+
+PROJECTS
+- Document processing platform using OCR and NLP.
+CERTIFICATIONS
+- AWS Certified Cloud Practitioner

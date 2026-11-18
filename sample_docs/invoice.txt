@@ -1,0 +1,22 @@
+Zenith Logistics
+42 MG Road, Delhi
+GSTIN: 19DOAVP5148G7Z8
+
+INVOICE
+Invoice No: INV-2024-46568
+Invoice Date: 29 May 2024
+Due Date: 28/06/2024
+Bill To: Global Foods Co
+
+Description                  Qty   Unit Price        Amount
+Packaging Boxes                4 x  13,273.38 =    53,093.52
+Coffee Beans                  20 x   8,392.73 =   167,854.60
+Diesel                        19 x   8,262.39 =   156,985.41
+Packaging Boxes               16 x  11,290.29 =   180,644.64
+Packaging Boxes               15 x   3,675.02 =    55,125.30
+
+Subtotal: INR 613,703.47
+GST (18%): ₹110,466.62
+Total Amount: INR 724,170.09
+Payment Terms: Net 30
+Thank you for your business.

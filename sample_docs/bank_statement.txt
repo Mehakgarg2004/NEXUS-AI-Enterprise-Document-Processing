@@ -1,0 +1,25 @@
+Axis Bank
+ACCOUNT STATEMENT
+Account Holder: Rohan Gupta
+Account Number: XXXXXX7975
+IFSC: UTIB0983362
+Statement From: 21/11/2024 To: 21/12/2024
+Opening Balance: 237,355.99
+
+Date        Transaction Details                      Type        Amount       Balance
+21/11/2024  NEFT CREDIT Infotech Solutions Deposit       15,135.29    252,491.28
+23/11/2024  UPI/ELECTRICITY  Withdrawal    32,934.10    219,557.18
+25/11/2024  NEFT CREDIT Sharma Traders     Deposit       48,313.17    267,870.35
+27/11/2024  NEFT CREDIT Acme Technologies  Deposit       17,733.01    285,603.36
+29/11/2024  UPI/ELECTRICITY  Withdrawal     9,075.64    276,527.72
+01/12/2024  UPI/RENT  Withdrawal    48,232.46    228,295.26
+03/12/2024  NEFT CREDIT Vertex Pharma      Deposit       55,298.43    283,593.69
+05/12/2024  UPI/ELECTRICITY  Withdrawal    28,052.70    255,540.99
+07/12/2024  UPI/AMAZON  Withdrawal    48,496.76    207,044.23
+09/12/2024  NEFT CREDIT Delta Analytics    Deposit       49,901.04    256,945.27
+11/12/2024  NEFT CREDIT Pinnacle Consultin Deposit       48,732.89    305,678.16
+13/12/2024  UPI/ELECTRICITY  Withdrawal    47,126.53    258,551.63
+
+Total Credits: 235,113.83
+Total Debits: 213,918.19
+Closing Balance: 258,551.63

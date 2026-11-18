@@ -1,0 +1,14 @@
+Sharma Traders
+PURCHASE ORDER
+PO Number: PO-23444
+Order Date: May 13, 2023
+Delivery Date: 2023-06-19
+Vendor: Metro Hardware
+Ship To: Sharma Traders, Warehouse 8, Pune
+Ordered By: Ishaan Bose
+
+Software License             Qty 497   @ 5,652.07
+
+Total: ₹2,809,078.79
+Please confirm receipt of this purchase order.
+Terms: Delivery must match requisition specifications.

@@ -1,0 +1,58 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16-alpine
+        env:
+          POSTGRES_USER: nexus
+          POSTGRES_PASSWORD: nexus
+          POSTGRES_DB: nexus
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U nexus" --health-interval 5s --health-retries 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install Tesseract
+        run: sudo apt-get update && sudo apt-get install -y tesseract-ocr fonts-dejavu-core
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Train classifier (logged to MLflow)
+        run: python -m training.train_classifier --epochs 8
+      - name: Run tests
+        run: python -m pytest -q
+      - name: Smoke test against PostgreSQL
+        env:
+          DATABASE_URL: postgresql+psycopg://nexus:nexus@localhost:5432/nexus
+          LLM_PROVIDER: none
+        run: |
+          python -m training.generate_samples
+          python - <<'EOF'
+          import glob, os
+          from nexus import create_app
+          c = create_app().test_client()
+          for p in sorted(glob.glob("sample_docs/*")):
+              with open(p, "rb") as f:
+                  d = c.post("/api/documents", data={"file": (f, os.path.basename(p))}).json["documents"][0]
+              print(p, d["doc_type"], d["status"])
+              assert d["status"] == "processed"
+          EOF
+
+  docker:
+    runs-on: ubuntu-latest
+    needs: test
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build image
+        run: docker build -t nexus-ai:ci .

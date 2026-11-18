@@ -1,0 +1,16 @@
+More Supermarket
+Kolkata Store #948
+Receipt No: R650138
+Date: 25 May 2023  Time: 21:26
+Cashier: Divya
+------------------------------
+Headphones            1,765.86
+Paracetamol              81.35
+Eggs (12)               921.58
+Shampoo                 244.90
+Bread                 1,256.17
+Notebook              1,075.10
+------------------------------
+TOTAL 5,344.96
+Payment Method: Cash
+No returns without receipt

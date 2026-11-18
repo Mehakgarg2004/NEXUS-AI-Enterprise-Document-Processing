@@ -1,0 +1,27 @@
+# Web / API
+flask>=3.0
+gunicorn>=22.0
+python-dotenv>=1.0
+requests>=2.31
+
+# Database
+sqlalchemy>=2.0
+psycopg[binary]>=3.1
+
+# OCR
+pytesseract>=0.3.10
+pdfplumber>=0.11
+pillow>=10.0
+
+# ML / NLP
+tensorflow-cpu>=2.16; sys_platform == "linux"
+tensorflow>=2.16; sys_platform != "linux"
+scikit-learn>=1.4
+numpy>=1.26
+
+# MLOps / cloud
+mlflow>=2.14
+boto3>=1.34
+
+# Testing
+pytest>=8.0
